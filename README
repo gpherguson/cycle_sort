@@ -1,0 +1,3 @@
+A Ruby implementation of the CycleSort sorting algorithm, from:
+
+    http://en.wikipedia.org/wiki/Cycle_sort
