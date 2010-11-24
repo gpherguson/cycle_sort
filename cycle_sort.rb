@@ -1,3 +1,7 @@
+# A Ruby implementation of the CycleSort sorting algorithm, from:
+#
+#   http://en.wikipedia.org/wiki/Cycle_sort
+
 # Sort an array in place and return the number of writes.
 def cycle_sort(array)
   writes = 0
@@ -45,6 +49,8 @@ def cycle_sort(array)
 
 end
 
-asdf = %w[9 8 7 6 5 4 3 2 1 0] # => ["9", "8", "7", "6", "5", "4", "3", "2", "1", "0"]
-cycle_sort(asdf) # => 10
-asdf # => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+if ($0 == __FILE__)
+  asdf = %w[9 8 7 6 5 4 3 2 1 0] # => ["9", "8", "7", "6", "5", "4", "3", "2", "1", "0"]
+  cycle_sort(asdf) # => 10
+  asdf # => ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+end
